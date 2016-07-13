@@ -1,24 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Bluebox</title>
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles/normalize.css">>
+    <meta charset="UTF-8">
+    <title>Bluebox</title>
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/font-awesome.css" rel="stylesheet">
+
 </head>
 <body>
-	<div class="wrapper">
-		<div class="header">
-			<div class="container">
-				<div class="logo"><a href="#"><img src="images/logo.png"  alt="" ></a></div>
-				<ul class="navigation">
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Works</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+<div class="wrapper">
+    <div class="row header">
+        <div class="row col-10 margin-1 box">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="navigation">
+                <ul class="main-menu">
+                    <li><a href="#">Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Wordpress Design</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Social Media</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" class="nowopen">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <a href="#"><img src="images/search icon.png" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row topbanner">
+            <div class="col-10 margin-1">
+                <div >
+                    Get in touch with us
+                </div>
+            </div>
+
+        </div>
+        <div class="row col-10 margin-1">
+            <div class="col-12">
+                <div class="col-7">
+                    <p>Thank you for stopping by! We are happy to hear from you. Please contact us through the form below and we will get back to you as soon as we can.</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-7 form">
+                    <label class="col-12" for="name">Name</label>
+                    <input id="name" class="col-9" placeholder="Enter name">
+                    <label class="col-12" for="email">Email Address</label>
+                    <input id="email" class="col-9" placeholder="Enter email">
+                    <label class="col-12" for="subject">Subject</label>
+                    <input id="subject" class="col-9" placeholder="Enter subject">
+                    <label class="col-12">Description</label>
+                    <textarea class="col-9"></textarea>
+                    <button class="col-4 subButton" type="submit" value="Submit">Submit</button>
+                </div>
+                <div class="col-5">
+
+                	<div class="col-12">
+                		<div class="col-6 textmedium">
+                			We are here
+                		</div>
+                	</div>	
+                	<div class="col-12 mapcontainer">
+                		<img class="map" src="images/map.png">
+                	</div>
+
+                    <div class="col-1 row">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-5 row">
+                        <label class="col-12">Blue</label>
+                        <label class="col-12">Blue</label>
+                        <label class="col-12">Blue</label>
+                        <label class="col-12">Blue</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer row">
+        <div class="col-10 margin-1">
+            Footer here
+        </div>
+    </div>
+</div>
 </body>
 </html>
