@@ -145,7 +145,7 @@ div [class*='col-'] {
 }
 
 .form label{
-	padding: 10px 0;
+	padding: 15px 0;
 }
 .form textarea{
 	width: 75%;
@@ -209,7 +209,6 @@ div [class*='col-'] {
 
 a {
     text-decoration: none;
-    display: block;
     position: relative;
     font-family: 'Times New Roman';
     font-size: 15pt;
@@ -271,7 +270,7 @@ li:first-child {
     border: 0;
 }
 
-.textmedium{
+.bigtext{
 	font-family: 'Times New Roman';
     font-size: 25pt;
     color: #626262;
@@ -293,7 +292,8 @@ li:first-child {
     height: 200px;
     bottom: 0;
     left: 0;
-    background: #ffab62;
+    background: #31333e;
+    color: #e2e7ed;
 }
 
 .main-menu 
@@ -320,3 +320,48 @@ li:first-child {
   	width: 100%;
     height: 100%;
   }
+.paddtext{
+	padding: 10px 0;
+}
+
+.paddtext a{
+	color: #00aeff;
+}
+
+nav a,i{
+	color:#e2e7ed;
+	padding: 0 20px;
+}
+
+nav{
+	padding-top: 40px;
+	padding-bottom: 5px;
+}
+
+small{
+	padding: 50px 20px 0;
+}
+.fa-facebook {
+	background: #3b5998;
+}
+.socials i{
+	margin-top: 29px;
+    margin-right: 5px;
+    border-radius: 3%;
+    padding: 4px 0px;
+}
+.fa-linkedin{
+	background: #006dc0;
+}
+.fa-twitter{
+	background: #29c5f6;
+}
+.fa-pinterest-p{
+	background: #c61118;
+}
+.fa-dribbble{
+	background: #ff5c93;
+}
+.fa-google-plus{
+	background: #d13e2f;
+}
