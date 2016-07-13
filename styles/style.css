@@ -138,7 +138,7 @@ div [class*='col-'] {
 
 .form input, 
 .form textarea{
-    padding: 10px 0;
+    padding: 10px 7px;
     border-width: 1px;
     border-color:#e2e7ed;
     border-style:solid;
@@ -181,11 +181,11 @@ div [class*='col-'] {
 .search {
     position: absolute;
     right: 0;
-    top: 50px;
+    top: 46px;
 }
 
 .navigation {
-    margin-left: 165px;
+	margin-left: 20px;
     margin-top: 45px;
 }
 
@@ -364,4 +364,26 @@ small{
 }
 .fa-google-plus{
 	background: #d13e2f;
+}
+
+.container-1{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+    width: 100%;
+    border: 1px solid #e2e7ed;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding: 3px;
+    padding-right: 20px;
+    background-color: #e2e7ed;
+}
+.container-1 .icon{
+    position: absolute;
+    top: 50%;
+    margin-left: -20px;
+    z-index: 1;
 }
