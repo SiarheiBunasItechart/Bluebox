@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial;
 }
 
 body, 
@@ -18,8 +19,7 @@ html {
     min-height: 100%;
 }
 .container{
-    margin-top: 110px;
-    padding-bottom: 200px;
+    margin-top: 105px;
 }
 
 .container , 
@@ -167,6 +167,7 @@ div [class*='col-'] {
     position: fixed;
     z-index: 1;
     background-color: white;
+    border-bottom: 1px solid #e2e7ed;
 }
 .header 
 .box {
@@ -210,7 +211,6 @@ div [class*='col-'] {
 a {
     text-decoration: none;
     position: relative;
-    font-family: 'Times New Roman';
     font-size: 15pt;
 }
 
@@ -255,7 +255,7 @@ a {
 .sub-menu:before{
     content: '';
     position: absolute;
-    left: 58px;
+    left: 35px;
     top: -38px;
     border: 22px solid transparent;
     border-bottom: 20px solid #e2e7ed;
@@ -271,7 +271,6 @@ li:first-child {
 }
 
 .bigtext{
-	font-family: 'Times New Roman';
     font-size: 25pt;
     color: #626262;
     padding: 20px 0;
@@ -279,7 +278,6 @@ li:first-child {
 
 .topbanner {
     background-color: #e2e7ed;
-    font-family: 'Times New Roman';
     font-size: 40pt;
     color: #626262;
     padding: 20px 0;
@@ -386,4 +384,33 @@ small{
     top: 50%;
     margin-left: -20px;
     z-index: 1;
+}
+
+.purplebox{
+	background-color: #908ef3;
+}
+.greenbox{
+	background-color: #58d99c;
+}
+.tomatobox{
+	background-color: #f4776d;
+
+}
+.yellowbox{
+	background-color: #edca52;
+}
+
+.titleblock{
+	padding: 45px 0;
+	font-size: 20pt;
+	color:white;
+}
+.imgcontent{
+    height: 100%;
+    width: 100%;
+}
+
+.maintext{
+	font-size: 13pt;
+	padding-bottom: 50px;
 }
