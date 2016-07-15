@@ -9,7 +9,7 @@ html {
     margin:0;
 }
 .wrapper {
-    min-height: 100%;
+    min-width: 1000px;
     height: 100%;
     position: relative;
 }
@@ -22,7 +22,7 @@ html {
     margin-top: 105px;
 }
 
-.container , 
+.container, 
 .row {
     width: 100%;
     display: block;
@@ -137,23 +137,24 @@ div [class*='col-'] {
 }
 
 .form input, 
-.form textarea{
+.form textarea {
     padding: 10px 7px;
     border-width: 1px;
     border-color:#e2e7ed;
     border-style:solid;
 }
 
-.form label{
+.form label {
 	padding: 15px 0;
 }
-.form textarea{
+
+.form textarea {
 	width: 75%;
 	max-width: 75%;
 	height: 150px;
 }
 
-.subButton{
+.subButton {
 	background-color: #00aeff;
 	padding: 10px 0;
     color: white;
@@ -163,12 +164,13 @@ div [class*='col-'] {
 }
 
 .header {
-
+	min-width: 1000px;
     position: fixed;
     z-index: 1;
     background-color: white;
     border-bottom: 1px solid #e2e7ed;
 }
+
 .header 
 .box {
     margin-bottom: 25px;
@@ -234,25 +236,27 @@ a {
     display: block;
 }
 
-.sub-menu li a{
+.sub-menu li a {
 	text-transform: none;
 	display:block;
 }
 
-.sub-menu li{
+.sub-menu li {
 	display: inline-block;
     width: 184px;
     margin: 5px;
 }
-.sub-menu li:hover{
+
+.sub-menu li:hover {
 	background-color:#00aeff;
 	display: inline-block;
 }
 
-.sub-menu li:hover a{
+.sub-menu li:hover a {
 	color: white;
 }
-.sub-menu:before{
+
+.sub-menu:before {
     content: '';
     position: absolute;
     left: 35px;
@@ -260,12 +264,7 @@ a {
     border: 22px solid transparent;
     border-bottom: 20px solid #e2e7ed;
 }
-/* li{
-	display: inline-block;
-    margin-right: 15px;
-    border-left: 2px solid #626262;
-    padding-left: 15px;
-} */
+
 li:first-child {
     border: 0;
 }
@@ -298,13 +297,15 @@ li:first-child {
 .nowopen {
     color: #00aeff;
 }
+
 .mapcontainer{
     background: #e2e7ed;
     border-radius: 10px;
     padding: 20px;
     position: relative;
     margin: 20px 0;
-   }
+  }
+
  .mapcontainer:after {
     content: ''; 
     position: absolute; 
@@ -312,67 +313,79 @@ li:first-child {
     bottom: -37px;
     border: 20px solid transparent;
     border-top: 22px solid #e2e7ed;
-   }
+  }
 
-  .map{
+ .map {
   	width: 100%;
     height: 100%;
   }
-.paddtext{
+
+.paddtext {
 	padding: 10px 0;
 }
 
-.paddtext a{
+.paddtext a {
 	color: #00aeff;
 }
 
-nav a,i{
+nav a,
+i {
 	color:#e2e7ed;
 	padding: 0 20px;
 }
 
-nav{
+nav {
 	padding-top: 40px;
 	padding-bottom: 5px;
 }
 
-small{
+small {
 	padding: 50px 20px 0;
 }
+
 .fa-facebook {
 	background: #3b5998;
 }
-.socials i{
+
+.socials i {
 	margin-top: 29px;
     margin-right: 5px;
     border-radius: 3%;
     padding: 4px 0px;
 }
-.fa-linkedin{
+
+.fa-linkedin {
 	background: #006dc0;
 }
-.fa-twitter{
+
+.fa-twitter {
 	background: #29c5f6;
 }
-.fa-pinterest-p{
+
+.fa-pinterest-p {
 	background: #c61118;
 }
-.fa-dribbble{
+
+.fa-dribbble {
 	background: #ff5c93;
 }
-.fa-google-plus{
+
+.fa-google-plus {
 	background: #d13e2f;
 }
-.fa-eye,.fa-link{
+
+.fa-eye,
+.fa-link {
 	background: #008bcc;
 }
 
-.container-1{
+.container-1 {
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
-.container-1 input#search{
+
+.container-1 input#search {
     width: 100%;
     border: 1px solid #e2e7ed;
     font-size: 10pt;
@@ -382,24 +395,27 @@ small{
     padding-right: 20px;
     background-color: #e2e7ed;
 }
-.container-1 .icon{
+
+.container-1 .icon {
     position: absolute;
     top: 50%;
     margin-left: -20px;
     z-index: 1;
 }
 
-.purplebox{
+.purplebox {
 	background-color: #908ef3;
 }
-.greenbox{
+
+.greenbox {
 	background-color: #58d99c;
 }
-.tomatobox{
-	background-color: #f4776d;
 
+.tomatobox {
+	background-color: #f4776d;
 }
-.yellowbox{
+
+.yellowbox {
 	background-color: #edca52;
 }
 
@@ -408,6 +424,7 @@ small{
 	font-size: 20pt;
 	color:white;
 }
+
 .imgcontent{
     height: 100%;
     width: 100%;
@@ -426,15 +443,13 @@ small{
 	color: #626262;
 	font-size: 20pt;
 	padding: 30px 0;
-
 }
 
-
-.centred{
+.centred {
 	text-align: center;
 }
 
-.ctable{
+.ctable {
 	width: 100%;
 	padding-bottom: 90px;
 }
@@ -444,6 +459,7 @@ small{
     display: block;
     float: left;
 }
+
 .column{
     float: left;
     width: 0;
@@ -458,11 +474,11 @@ small{
     position: absolute;
 }
 
-.column:hover .onhover{
+.column:hover .onhover {
 	display: block;
 }
 
-.onhover{
+.onhover {
 	display: none;
 	background-color: #00aeff;
     position: absolute;
@@ -472,16 +488,16 @@ small{
     right: 0;
 }
 
-.twhite{
+.twhite {
 	color:white;
 	text-align: center;
 }
 
-.gtext{
+.gtext {
     padding: 35px 40px;
 }
 
-.leftpos{
+.leftpos {
 	position:absolute;
     bottom: 0;
     left: 0;
@@ -502,11 +518,46 @@ small{
     padding: 0;
 }
 
-.bluelink{
+.bluelink {
 	color: #00aeff;
 	font-size: 10pt;
 }
 
-.padd{
+.padd {
 	 padding-bottom: 50px;
+}
+
+.dark{
+	background-color: #31333e;
+}
+
+.iconleft{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    padding-top: 15%;
+}
+.iconright {
+    right: 0;
+    height: 100%;
+    padding-top: 15%;
+    position: absolute;
+}
+
+.moreButton {
+	background-color: #00aeff;
+	padding: 15px 30px;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.banner {
+   padding: 20px 0;
+}
+
+.right{
+	float: right;
+    padding-right: 0;
 }
