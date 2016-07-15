@@ -14,10 +14,6 @@ html {
     position: relative;
 }
 
-.block {
-    height: auto;
-    min-height: 100%;
-}
 .container{
     margin-top: 105px;
 }
@@ -28,112 +24,6 @@ html {
     display: block;
     float: left;
     position: relative;
-}
-
-.col-12 {
-    width: 100%;
-}
-
-.col-11 {
-    width: 91.66666667%;
-}
-
-.col-10 {
-    width: 83.33333333%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-8 {
-    width: 66.66666667%
-}
-
-.col-7 {
-    width: 58.33333333%;
-
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-5 {
-    width: 41.66666667%;
-}
-
-.col-4 {
-    width: 33.33333333%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-2 {
-    width: 16.66666667%;
-}
-
-.col-1 {
-    width: 8.33333333%;
-}
-
-.margin-12 {
-    margin-left: 100%;
-}
-
-.margin-11 {
-    margin-left: 91.66666667%;
-}
-
-.margin-10 {
-    margin-left: 83.33333333%;
-}
-
-.margin-9 {
-    margin-left: 75%;
-}
-
-.margin-8 {
-    margin-left: 66.66666667%
-}
-
-.margin-7 {
-    margin-left: 58.33333333%;
-}
-
-.margin-6 {
-    margin-left: 50%;
-}
-
-.margin-5 {
-    margin-left: 41.66666667%;
-}
-
-.margin-4 {
-    margin-left: 33.33333333%;
-}
-
-.margin-3 {
-    margin-left: 25%;
-}
-
-.margin-2 {
-    margin-left: 16.66666667%;
-}
-
-.margin-1 {
-    margin-left: 8.33333333%;
-}
-
-div [class*='col-'] {
-    display: block;
-    float: left;
-}
-
-.form [class*='col-'] {
-    margin-bottom: 5px;
 }
 
 .form input, 
@@ -152,6 +42,7 @@ div [class*='col-'] {
 	width: 75%;
 	max-width: 75%;
 	height: 150px;
+	resize: none;
 }
 
 .subButton {
@@ -166,7 +57,7 @@ div [class*='col-'] {
 .header {
 	min-width: 1000px;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     background-color: white;
     border-bottom: 1px solid #e2e7ed;
 }
@@ -178,7 +69,7 @@ div [class*='col-'] {
 
 .logo {
     float: left;
-    margin: 27px 0px 0px 0px;
+    margin-top: 27px;
 }
 
 .search {
@@ -214,6 +105,58 @@ a {
     text-decoration: none;
     position: relative;
     font-size: 15pt;
+}
+
+.bigtext{
+    font-size: 25pt;
+    color: #626262;
+    padding: 20px 0;
+}
+
+.topbanner {
+    background-color: #e2e7ed;
+    font-size: 40pt;
+    color: #626262;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.searchcontainer input {
+    width: 100%;
+    border: 1px solid #e2e7ed;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding: 6px;
+    padding-right: 20px;
+    background-color: #e2e7ed;
+}
+
+.titleblock{
+	padding: 45px 0;
+	font-size: 20pt;
+	color:white;
+}
+
+.basictext{
+	font-size: 13pt;
+	padding-bottom: 50px;
+}
+
+.mediumtext{
+	color: #626262;
+	font-size: 20pt;
+	padding: 30px 0;
+}
+
+.bluelink {
+	color: #00aeff;
+	font-size: 10pt;
+}
+
+.paddingcontent{
+	padding-bottom: 50px;
 }
 
 .main-menu > li a {
@@ -269,20 +212,6 @@ li:first-child {
     border: 0;
 }
 
-.bigtext{
-    font-size: 25pt;
-    color: #626262;
-    padding: 20px 0;
-}
-
-.topbanner {
-    background-color: #e2e7ed;
-    font-size: 40pt;
-    color: #626262;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-}
 
 .footer {
     width: 100%;
@@ -351,7 +280,7 @@ small {
 	margin-top: 29px;
     margin-right: 5px;
     border-radius: 3%;
-    padding: 4px 0px;
+    padding: 4px 0;
 }
 
 .fa-linkedin {
@@ -379,28 +308,18 @@ small {
 	background: #008bcc;
 }
 
-.container-1 {
-  vertical-align: middle;
-  white-space: nowrap;
-  position: relative;
+.searchcontainer {
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
 }
 
-.container-1 input#search {
-    width: 100%;
-    border: 1px solid #e2e7ed;
-    font-size: 10pt;
-    float: left;
-    color: #63717f;
-    padding: 3px;
-    padding-right: 20px;
-    background-color: #e2e7ed;
-}
 
-.container-1 .icon {
+.searchcontainer .icon {
     position: absolute;
-    top: 50%;
-    margin-left: -20px;
     z-index: 1;
+    margin-left: 75%;
+    margin-top: 3px;
 }
 
 .purplebox {
@@ -419,30 +338,13 @@ small {
 	background-color: #edca52;
 }
 
-.titleblock{
-	padding: 45px 0;
-	font-size: 20pt;
-	color:white;
-}
-
 .imgcontent{
     height: 100%;
     width: 100%;
 }
 
-.maintext{
-	font-size: 13pt;
-	padding-bottom: 50px;
-}
-
 .graybox{
 	background-color: #e2e7ed;
-}
-
-.mediumtext{
-	color: #626262;
-	font-size: 20pt;
-	padding: 30px 0;
 }
 
 .centred {
@@ -482,7 +384,7 @@ small {
 	display: none;
 	background-color: #00aeff;
     position: absolute;
-     top: 0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -511,20 +413,14 @@ small {
 
 .leftpos i {
     border-radius: 3%;
-    padding: 0;
-}
-.rightpos i{
-    border-radius: 3%;
-    padding: 0;
 }
 
-.bluelink {
-	color: #00aeff;
-	font-size: 10pt;
+.rightpos i{
+    border-radius: 3%;
 }
 
 .padd {
-	 padding-bottom: 50px;
+	padding: 50px 0;
 }
 
 .dark{
@@ -560,4 +456,10 @@ small {
 .right{
 	float: right;
     padding-right: 0;
+}
+
+.basiclink{
+	text-decoration: none;
+	color: black;
+	font-size: 13pt;
 }
