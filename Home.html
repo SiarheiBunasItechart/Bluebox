@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Services</title>
     <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
     <link href="styles/font-awesome.css" rel="stylesheet">
-
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/gridsystem.css">
+    <link rel="stylesheet" href="styles/carousel-style.css">
 </head>
 <body>
 <div class="wrapper">
@@ -31,173 +32,176 @@
                 </ul>
             </div>
             <div class="search col-1">
-                <div class="container-1">
-				<input type="search" id="search" placeholder="Search..." />
-                <span class="icon"><a href="#"><img src="images/search icon.png"></a></i></span>
+                <div class="searchcontainer">
+                    <input type="search" id="search" placeholder="Search..." />
+                    <div class="icon"><a href="#"><img src="images/search icon.png"></a></div>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="container">
         <div class="row dark">
-            <div class="col-12 banner">
-                <div class="col-1">
-                    <a href="#" class="iconleft">
-                        <div class="col-1 ">
-                            <i class="fa fa-angle-left fa-2x " aria-hidden="true"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-10 margin-1">
+            <div class="carousel-wrapper col-10 margin-1">
+                <span id="target-item-1"></span>
+                <span id="target-item-2"></span>
+                <span id="target-item-3"></span>
+                <div class="carousel-item item-1">
                     <div class="col-9"><h1 class="twhite">We are a Creative Digital Agency</h1></div>
                     <div class="col-3"><button class="moreButton">Learn More</button></div>
                     <div class="col-12 centred"><img  src="images/iphone.png"></div>
+                    <a class="arrow arrow-prev" href="#target-item-3"><div class="verticalalignment"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></div></a>
+                    <a class="arrow arrow-next" href="#target-item-2"><div class="verticalalignment"><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></div></a>
                 </div>
-                <div class="col-1">
-                    <a href="#" class="iconright" >
-                        <div class="col-1">
-                            <i class="fa fa-angle-right fa-2x right" aria-hidden="true"></i>
-                        </div>
+                <div class="carousel-item item-2">
+                    <div class="col-9"><h1 class="twhite">This Is iPhone</h1></div>
+                    <div class="col-3"><button class="moreButton">Learn More</button></div>
+                    <div class="col-12 centred"><img  src="images/iphoneonly.png"></div>
+                    <a class="arrow arrow-prev" href="#target-item-1"><div class="verticalalignment"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></div></a>
+                    <a class="arrow arrow-next" href="#target-item-3"><div class="verticalalignment"><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></div>
                     </a>
+                </div>
+                <div class="carousel-item item-3">
+                    <div class="col-9"><h1 class="twhite">This Is MacBook</h1></div>
+                    <div class="col-3"><button class="moreButton">Learn More</button></div>
+                    <div class="col-12 centred"><img  src="images/macbook.png"></div>
+                    <a class="arrow arrow-prev" href="#target-item-2"><div class="verticalalignment"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></div></a>
+                    <a class="arrow arrow-next" href="#target-item-1"><div class="verticalalignment"><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></div></a>
                 </div>
             </div>
         </div>
         <div class="row">
-        <div class="col-10 margin-1 padd">
-            <div class="col-4 centred">
-                <div class="mediumtext ">
-                    Web Design
+            <div class="col-10 margin-1 padd">
+                <div class="col-4 centred">
+                    <div class="mediumtext ">
+                        Web Design
+                    </div>
+                    <div>
+                        <img src="images/brushicon.png">
+                    </div>
+                    <div class="gtext">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                    </div>
+                    <a class="bluelink" href="#"><strong>READ MORE</strong></a>
                 </div>
-                <div>
-                    <img src="images/brushicon.png">
-                </div>
-                <div class="gtext">
+                <div class="col-4 centred">
+                    <div class="mediumtext ">
+                        Social Media
+                    </div>
+                    <div>
+                        <img src="images/socialicon.png">
+                    </div>
+                    <div class="gtext">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                    </div>
+                    <a class="bluelink" href="#"><strong>READ MORE</strong></a>
                 </div>
-                <a class="bluelink" href="#"><strong>READ MORE</strong></a>
+                <div class="col-4 centred">
+                    <div class="mediumtext ">
+                        Mobile Apps
+                    </div>
+                    <div>
+                        <img src="images/mobileicon.png">
+                    </div>
+                    <div class="gtext">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                    </div>
+                    <a class="bluelink" href="#"><strong>READ MORE</strong></a>
+                </div>
             </div>
-            <div class="col-4 centred">
-                <div class="mediumtext ">
-                    Social Media
-                </div>
-                <div>
-                    <img src="images/socialicon.png">
-                </div>
-                <div class="gtext">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
-                </div>
-                <a class="bluelink" href="#"><strong>READ MORE</strong></a>
-            </div>
-            <div class="col-4 centred">
-                <div class="mediumtext ">
-                    Mobile Apps
-                </div>
-                <div>
-                    <img src="images/mobileicon.png">
-                </div>
-                <div class="gtext">
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
-                </div>
-                <a class="bluelink" href="#"><strong>READ MORE</strong></a>
-            </div>
-        </div>
         </div>
         <div class="row graybox">
-        <div class="col-10 margin-1">
-            <div class="col-12">
-                <div class="col-3 mediumtext">Our Works</div>
-            </div>
-            <div class="col-12 ctable">
-                <div class="crow">
-                    <div class="column">
-                        <img src="images/w1.png">
-                        <div class="onhover">
-                            <h3 class="twhite">This is Image Hover</h3>
-                            <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                            <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x fa-fw" aria-hidden="true"></i></a></div>
+            <div class="col-10 margin-1">
+                <div class="col-12">
+                    <div class="col-3 mediumtext">Our Works</div>
+                </div>
+                <div class="col-12 ctable">
+                    <div class="crow">
+                        <div class="column">
+                            <img src="images/w1.png">
+                            <div class="onhover">
+                                <h3 class="twhite">This is Image Hover</h3>
+                                <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x " aria-hidden="true"></i></a></div>
+                                <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x " aria-hidden="true"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <img src="images/w8.png">
+                            <div class="onhover">
+                                <h3 class="twhite">This is Image Hover</h3>
+                                <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x " aria-hidden="true"></i></a></div>
+                                <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x " aria-hidden="true"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <img src="images/w3.png">
+                            <div class="onhover">
+                                <h3 class="twhite">This is Image Hover</h3>
+                                <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x " aria-hidden="true"></i></a></div>
+                                <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x " aria-hidden="true"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <img src="images/w4.png">
+                            <div class="onhover">
+                                <h3 class="twhite">This is Image Hover</h3>
+                                <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x " aria-hidden="true"></i></a></div>
+                                <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x " aria-hidden="true"></i></a></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <img src="images/w8.png">
-                        <div class="onhover">
-                            <h3 class="twhite">This is Image Hover</h3>
-                            <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                            <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x fa-fw" aria-hidden="true"></i></a></div>
+                    <div class="crow">
+                        <div class="column">
+                            <img src="images/w5.png">
+                            <div class="onhover">
+                                <h3 class="twhite">This is Image Hover</h3>
+                                <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x" aria-hidden="true"></i></a></div>
+                                <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x " aria-hidden="true"></i></a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <img src="images/w3.png">
-                        <div class="onhover">
-                            <h3 class="twhite">This is Image Hover</h3>
-                            <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                            <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x fa-fw" aria-hidden="true"></i></a></div>
+                        <div class="column">
+                            <img src="images/w6.png">
+                            <div class="onhover">
+                                <h3 class="twhite">This is Image Hover</h3>
+                                <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x " aria-hidden="true"></i></a></div>
+                                <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x " aria-hidden="true"></i></a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <img src="images/w4.png">
-                        <div class="onhover">
-                            <h3 class="twhite">This is Image Hover</h3>
-                            <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                            <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x fa-fw" aria-hidden="true"></i></a></div>
+                        <div class="column">
+                            <img src="images/w7.png">
+                            <div class="onhover">
+                                <h3 class="twhite">This is Image Hover</h3>
+                                <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x " aria-hidden="true"></i></a></div>
+                                <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x " aria-hidden="true"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <img src="images/w8.png">
+                            <div class="onhover">
+                                <h3 class="twhite">This is Image Hover</h3>
+                                <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x " aria-hidden="true"></i></a></div>
+                                <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x " aria-hidden="true"></i></a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="crow">
-                    <div class="column">
-                        <img src="images/w5.png">
-                        <div class="onhover">
-                            <h3 class="twhite">This is Image Hover</h3>
-                            <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                            <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <img src="images/w6.png">
-                        <div class="onhover">
-                            <h3 class="twhite">This is Image Hover</h3>
-                            <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                            <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <img src="images/w7.png">
-                        <div class="onhover">
-                            <h3 class="twhite">This is Image Hover</h3>
-                            <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                            <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <img src="images/w8.png">
-                        <div class="onhover">
-                            <h3 class="twhite">This is Image Hover</h3>
-                            <p class="twhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="leftpos"><a href="#"><i class="fa fa-eye fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                            <div class="rightpos"><a href="#"><i class="fa fa-link fa-2x fa-fw" aria-hidden="true"></i></a></div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
         </div> 
     </div>
     <div class="footer row">
         <div class="col-10 margin-1">
             <div class="col-7">
-                <nav><a href="#">Home</a> | <a href="#">Service</a> |<a href="Portfolio.html">Works</a> | <a href="#">Blog</a> | <a href="ContactUs.html">Contact us</a>
+                <nav><a href="Home.html">Services</a> |<a href="Portfolio.html">Works</a> | <a href="#">Blog</a> | <a href="ContactUs.html">Contact us</a>
                 </nav>
                 <i class="fa fa-copyright col-12" aria-hidden="true">2013 BlueBox. All Rights Reserved.</i>
-                <small class="col-12">The logos used in the design are the property of their respective owners/copyright holders.</small>
-                
+                <small class="col-12">The logos used in the design are the property of their respective owners/copyright holders.</small> 
             </div>
             <div class="col-5 socials">
                 <a href="#"><i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i></a>
